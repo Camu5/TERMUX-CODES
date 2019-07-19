@@ -1,0 +1,12 @@
+#Coded by Krypt0N
+
+termux-setup-storage
+#Setting up storage access
+apt update
+#Updating all packages
+pkg install unstable-repo
+#Installing this repository makes everything automatic
+pkg install metasploit
+#Installing Metasploit, you have to type Y in every "Y/N"
+
+#This code installs Metasploit automatically without any error like "Nokogiri gem" or anything else...
