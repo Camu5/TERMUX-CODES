@@ -1,5 +1,12 @@
 #Coded by Krypt0N
 
+METASPLOIT='\033[0;36m'
+RETR0='\033[0;34m'
+VOID='\033[0;0m'
+ACDC='\033[0;31m'
+WINNER='\033[1;33m'
+
+
 termux-setup-storage
 #Setting up storage access
 apt update
@@ -10,5 +17,12 @@ pkg install metasploit
 #Installing Metasploit, you have to type Y in every "Y/N"
 
 #This code installs Metasploit automatically without any error like "Nokogiri gem" or anything else...
-echo "Now Metasploit its installed, you can check it by typing 'msfconsole'" 
-echo "This automatized installer was coded by Krypt0N, dont forget it!"
+echo
+echo
+echo "------------------------------------------------------"
+echo "${WINNER}Now ${METASPLOIT}Metasploit ${WINNER} its installed, you can check it by typing in your terminal ${VOID}'${METASPLOIT}msfconsole${VOID}'" 
+echo 
+echo "This automatized installer was coded by ${RETR0}Krypt0N${VOID}, dont forget it!"
+echo  
+echo "${ACDC}Long Live Rock!!!${VOID}"
+echo "------------------------------------------------------"
