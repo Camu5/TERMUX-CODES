@@ -10,3 +10,5 @@ pkg install metasploit
 #Installing Metasploit, you have to type Y in every "Y/N"
 
 #This code installs Metasploit automatically without any error like "Nokogiri gem" or anything else...
+echo "Now Metasploit its installed, you can check it by typing 'msfconsole'" 
+echo "This automatized installed was coded by Krypt0N, dont forget it!"
