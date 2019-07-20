@@ -1,5 +1,12 @@
 #Coded by Krypt0N
 
+
+SET='\033[1;34m'
+RETR0='\033[0;34m'
+VOID='\033[0;0m'
+ACDC='\033[0;31m'
+WINNER='\033[1;33m'
+
 termux-setup-storage
 #Setting up storage access
 apt update && apt upgrade -y
@@ -20,8 +27,14 @@ chmod 777 setup.py
 #Giving permissions to the executable
 ./setup.py install
 #Installing SEToolkit
-echo "Now SET its installed, you can check it by typing 'setoolkit'"
-echo "This automatized installer was coded by Krypt0N, dont forget it!"
-
+echo
+echo
+echo "------------------------------------------------------"
+echo "${WINNER}Now ${SET}SEToolkit ${WINNER} its installed, you can check it by typing in your terminal ${VOID}'${SET}setoolkit${VOID}'" 
+echo 
+echo "This automatized installer was coded by ${RETR0}Krypt0N${VOID}, dont forget it!"
+echo  
+echo "${ACDC}Long Live Rock!!!${VOID}"
+echo "------------------------------------------------------"
 #
 
