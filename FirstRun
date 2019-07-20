@@ -3,6 +3,7 @@
 TERMUX='\033[0;32m'
 RETR0='\033[0;34m'
 VOID='\033[0m'
+ACDC='\033[0;31m'
 
 termux-setup-storage
 #Setting up storage access
@@ -14,7 +15,12 @@ pkg install unstable-repo
 #Installing this repository makes everything automatic
 apt install util-linux coreutils vim python python2 ruby ruby-dev perl clang curl wget make openssl php zip unzip tar htop bison findutils git apr apr-util libffi-dev libgmp-dev postgresql-dev readline-dev libsqlite-dev openssl-dev libtool libxml2-dev libxslt-dev ncurses-dev pkg-config libgrpc-dev termux-tools ncurses-utils ncurses postgresql termux-elf-cleaner
 #Install all Termux utils
+echo
+echo
+echo "------------------------------------------------------"
 echo "${TERMUX}Now Termux is configured!${VOID}" 
+echo 
 echo "This automatized installer was coded by ${RETR0}Krypt0N${VOID}, dont forget it!"
-
-
+echo  
+echo "${ACDC}Long Live Rock!!!${VOID}"
+echo "------------------------------------------------------"
