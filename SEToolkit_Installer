@@ -1,0 +1,27 @@
+#Coded by Krypt0N
+
+termux-setup-storage
+#Setting up storage access
+apt update && apt upgrade -y
+#Updating all packages
+apt install python2 python python-dev python2-dev wget tar termux-exec
+#Installing Dependences
+pkg install wget
+#Installing wget
+wget https://hax4us.github.io/setoolkit_7.7.2.gz
+#Downloading the files required for instalation
+tar -xf setoolkit_7.7.2.gz
+#Extracting all the files
+cd setoolkit
+#Getting into the extracted files
+pip install -r requirements.txt
+#Installing the requirements
+chmod 777 setup.py
+#Giving permissions to the executable
+./setup.py install
+#Installing SEToolkit
+echo "Now SET its installed, you can check it by typing 'setoolkit'"
+echo "This automatized installer was coded by Krypt0N, dont forget it!"
+
+#
+
