@@ -20,7 +20,7 @@ echo
 echo "------------------------------------------------------"
 echo "${TERMUX}Now Termux is configured!${VOID}" 
 echo 
-echo "This automatized installer was coded by ${RETR0}Krypt0N${VOID}, dont forget it!"
+echo "${WINNER}This automatized installer was coded by ${RETR0}Krypt0N${WINNER}, dont forget it${WINNER}!"
 echo  
 echo "${ACDC}Long Live Rock!!!${VOID}"
 echo "------------------------------------------------------"
