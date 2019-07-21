@@ -4,6 +4,7 @@ TERMUX='\033[0;32m'
 RETR0='\033[0;34m'
 VOID='\033[0m'
 ACDC='\033[0;31m'
+WINNER='\033[1;33m'
 
 termux-setup-storage
 #Setting up storage access
