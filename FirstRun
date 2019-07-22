@@ -15,6 +15,7 @@ pkg install unstable-repo
 #Installing this repository makes everything automatic
 apt install util-linux coreutils vim python python2 ruby ruby-dev perl clang curl wget make openssl php zip unzip tar htop bison findutils git apr apr-util libffi-dev libgmp-dev postgresql-dev readline-dev libsqlite-dev openssl-dev libtool libxml2-dev libxslt-dev ncurses-dev pkg-config libgrpc-dev termux-tools ncurses-utils ncurses postgresql termux-elf-cleaner
 #Install all Termux utils
+pkg install termux-api
 echo
 echo
 echo "${GREENA}------------------------------------------------------"
