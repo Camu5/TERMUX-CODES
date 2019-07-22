@@ -7,8 +7,6 @@ ACDC='\033[0;31m'
 TWENTYONEPILOTS='\033[1;33m'
 GREENA='\033[1;32m'
 
-termux-setup-storage
-#Setting up storage access
 apt update
 #Update all packages
 apt upgrade
