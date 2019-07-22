@@ -1,0 +1,10 @@
+#!/bin/bash
+
+#Coded by Krypt0N
+
+items=("https://www.youtube.com/watch?v=YnmEePUXLRs" "https://www.youtube.com/watch?v=3vVSBLkpO-8" "https://www.youtube.com/watch?v=iPKJUzkTt6Y")
+
+size=${#items[@]}
+randomindex=$(($RANDOM % $size))
+
+mpv ${items[$randomindex]}
