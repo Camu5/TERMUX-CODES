@@ -1,0 +1,11 @@
+#Coded by Krypt0N
+
+RANGE=3
+
+echo
+
+number=$RANDOM
+let "number %= $RANGE"
+
+ARRAY=(https://www.youtube.com/watch?v=iPKJUzkTt6Y https://www.youtube.com/watch?v=-jix8bSotZ4 https://www.youtube.com/watch?v=YnmEePUXLRs)
+mpv ${ARRAY[$number]}
