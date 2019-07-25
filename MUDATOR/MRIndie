@@ -2,9 +2,18 @@
 
 #Coded by Krypt0N
 
-mpv $(shuf -n1 .MRIndie_links)
+items=()
+while IFS= read -r line; do
+  items+=("$line")
+done < MRIndie_links
 
-CANCION=$(shuf -n1 .MRIndie_links)
+size=${#items[@]}
+randomindex=$(($RANDOM % $size))
+
+mpv ${items[$randomindex]}
+
+CANCION=${items[$randomindex]}
+
 
 if [ "$CANCION" == "https://www.youtube.com/watch?v=YnmEePUXLRs" ]
 then
