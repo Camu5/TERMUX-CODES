@@ -16,7 +16,7 @@ echo -e "\e[1mA Music Recomendator!" | lolcat -a
   echo -e "\e[91m------------------------------------------------------"
  echo  -e "\e[93mPlease, choose a musical genre:" 
 PS3="#?" 
- options=("Rock" "Indie/Alternative" "Pop" "Quit")
+ options=("Rock" "Indie/Alternative" "Metal" "Quit")
  select opt in "${options[@]}"
 do
     case $opt in
@@ -30,9 +30,9 @@ do
 	    bash MRIndie
 	    exit 
             ;;
-        "Pop")
+        "Metal")
             echo "Likefuly Choice!" | lolcat -a
-	    bash MRPop
+	    bash RMetal
 	    exit
             ;;
         "Quit")

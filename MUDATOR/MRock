@@ -1,0 +1,69 @@
+#!/bin/bash
+
+#Coded by Krypt0N
+
+items=("https://www.youtube.com/watch?v=FlPalDkWsuA" "https://www.youtube.com/watch?v=bNawbNsx52A" "https://www.youtube.com/watch?v=pAgnJDJN4VA")
+
+size=${#items[@]}
+randomindex=$(($RANDOM % $size))
+
+echo -e "\e[1;4;35mIf you want to stop playing press (CTRL + C)"
+
+mpv ${items[$randomindex]}
+
+CANCION=${items[$randomindex]}
+
+if [ "$CANCION" == "https://www.youtube.com/watch?v=pAgnJDJN4VA" ]
+then
+	echo 
+	 echo -e "\e[91m------------------------------------------------------"
+       	echo -e "\e[1mThis was: Back in Black - AC/DC " | lolcat
+	 echo -e "\e[91m------------------------------------------------------"
+         echo
+fi
+
+if [ "$CANCION" == "https://www.youtube.com/watch?v=bNawbNsx52A" ]
+then
+	echo 
+	 echo -e "\e[91m------------------------------------------------------"
+       	echo -e "\e[1mThis was: Rock you like a Hurricane - Scorpions" | lolcat
+	 echo -e "\e[91m------------------------------------------------------"
+         echo
+
+fi
+
+if [ "$CANCION" == "https://www.youtube.com/watch?v=FlPalDkWsuA" ]
+then
+	echo 
+	 echo -e "\e[91m------------------------------------------------------"
+       	echo -e "\e[1mThis was: Back in the Game - Airbourne" | lolcat
+	 echo -e "\e[91m------------------------------------------------------"
+         echo
+
+fi
+
+echo -e "\e[93mDo you wanna listen another song?"
+ select yn in "Yes" "No"; do
+    case $yn in
+        Yes ) bash MRIndie;;
+
+         No ) 
+	     echo -e "\e[94mDo you wanna listen another genre?"
+             	select yn in "Yes" "No"; do
+               		case $yn in
+                 		Yes ) bash Test1.sh; exit;;
+                 		No ) clear; echo "See you later!" | lolcat -a; exit;;
+                 		* ) echo "Please choice a valid option!";;
+                   			esac
+                                        	done;;	 
+
+	* ) echo "Please choice a valid option!";;
+    esac
+done
+
+
+
+	
+
+
+
