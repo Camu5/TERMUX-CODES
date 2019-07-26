@@ -1,7 +1,7 @@
 #!/bin/bash
 #Coded by Krypt0N
 
-if [ -f MRIndie ] && [ -f MRock ] && [ -f MRPop]
+if [ -f MRIndie ] && [ -f MRock ] && [ -f RMetal ]
 then 
 	clear 
 else 
