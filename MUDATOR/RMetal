@@ -45,7 +45,7 @@ fi
 echo -e "\e[93mDo you wanna listen another song?"
  select yn in "Yes" "No"; do
     case $yn in
-        Yes ) bash MRIndie;;
+        Yes ) bash RMetal;;
 
          No ) 
 	     echo -e "\e[94mDo you wanna listen another genre?"
